@@ -3,26 +3,36 @@
 import sys
 import os
 
-# argv[1]:~/GitRepo/nos-ansible-playbooks/roles/indy/files/indy-devel-master/
+# argv[1]:  ~/GitRepo/nos-ansible-playbooks/roles/indy/files/indy-devel-master/
+
+# Config structure
+#├── main.conf
+#├── conf.d
+#│   ├── README.txt
+#│   ├── brew.conf
+#│   ├── content-browse.conf
+#│   ├── depgraph.conf
+#│   ├── environment.conf
+#│   ├── httprox.conf
 
 conf_dir = sys.argv[1] + "/etc/"
 sub_conf_dir = "conf.d/"
 
 with_comment = 1
 
+def output_line(line):
+  if not with_comment and not line.startswith("#"):
+    print line.strip()
+  elif with_comment:
+    print line.strip()
+
 def handle_line(line, skip_empty_line=0):
   line = line.strip()
   if skip_empty_line:
     if line:
-      if not with_comment and not line.startswith("#"):
-        print line.strip()
-      elif with_comment:
-        print line.strip()
+      output_line(line)
   else:
-    if not with_comment and not line.startswith("#"):
-      print line.strip()
-    elif with_comment:
-      print line.strip()
+    output_line(line)
 
 def read_main_conf():
   fo = open(conf_dir + "main.conf", "r")
