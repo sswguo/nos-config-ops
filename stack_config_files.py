@@ -6,14 +6,15 @@ import os
 # argv[1]:  ~/GitRepo/nos-ansible-playbooks/roles/indy/files/indy-devel-master/
 
 # Config structure
-#├── main.conf
-#├── conf.d
-#│   ├── README.txt
-#│   ├── brew.conf
-#│   ├── content-browse.conf
-#│   ├── depgraph.conf
-#│   ├── environment.conf
-#│   ├── httprox.conf
+#
+# |-- main.conf
+# |-- conf.d
+# |   |-- README.txt
+# |   |-- brew.conf
+# |   |-- content-browse.conf
+# |   |-- depgraph.conf
+# |   |-- environment.conf
+# |   |-- httprox.conf
 
 conf_dir = sys.argv[1] + "/etc/"
 sub_conf_dir = "conf.d/"
