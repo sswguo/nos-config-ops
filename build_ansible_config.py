@@ -46,7 +46,7 @@ list_dir = [ "etc/brew/", "etc/keycloak/"  ]
 # - kafka secrets
 # - proxy secrets
 
-list_dir_2 = ["etc/proxy/"]
+list_dir_2 = ["etc/kafka/", "etc/proxy/"]
 
 def run(cmd):
   print cmd

@@ -5,7 +5,7 @@
 
 args[1]: the dir of config that need to be handled  
 ```
-  e.g.: ~/GitRepo/pnc-indy-etc/indy/upshift/newcastle-devel/indy-master/     
+  e.g.: ~/GitRepo/GitRepo/nos-ansible-playbooks/playbooks/newcastle/vaults/indy-master/  
 ```
 args[2]: dryrun, default is True
 
