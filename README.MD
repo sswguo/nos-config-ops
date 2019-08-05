@@ -1,5 +1,8 @@
 ## Scripts
 
+The scripts are used to move our configuration files from pnc-indy-etc into ansible repo,  
+and meanwhile it's required to encode the credentails. 
+
 ---
 ### `build_ansible_config.py`
 The script uses the ansible vault to encode the credentials, so the ansible password file is required in place.
