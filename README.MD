@@ -2,6 +2,8 @@
 
 ---
 ### `build_ansible_config.py`
+The script uses the ansible vault to encode the credentials, so the ansible password file is required in place.
+
 
 args[1]: the dir of config that need to be handled  
 ```
