@@ -1,7 +1,9 @@
 ## Scripts
 
 The scripts are used to move our configuration files from pnc-indy-etc into ansible repo,  
-and meanwhile it's required to encode the credentails. 
+and meanwhile it's required to encode the credentails.  
+
+Please move the files from pnc-indy-etc into ansible repo first and then exec the following scripts.
 
 ---
 ### `build_ansible_config.py`
