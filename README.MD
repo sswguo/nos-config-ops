@@ -6,6 +6,10 @@ and meanwhile it's required to encode the credentails.
 Please move the files from pnc-indy-etc into ansible repo first and then exec the following scripts.
 
 ---
+### `files_migration.py`
+Move the config files from gerrit repo into ansible repo
+
+---
 ### `build_ansible_config.py`
 The script uses the ansible vault to encode the credentials, so the ansible password file is required in place.
 
