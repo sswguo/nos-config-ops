@@ -37,7 +37,9 @@ work_dir = "/tmp/wd/"
 # - brew secrets
 # - keycloak secrets
 
-list_dir = [ "etc/brew/", "etc/keycloak/"  ]
+# - NOTE: remove brew secrets, since we have the root ca installed in the base image
+# "etc/brew/"
+list_dir = [ "etc/keycloak/"  ]
 
 ## for several special files, need to encoded by base64 first 
 

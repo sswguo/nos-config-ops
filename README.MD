@@ -6,6 +6,8 @@ The scripts are used to move our configuration files from pnc-indy-etc into ansi
 ### `files_migration.py`
 Move the config files from gerrit repo into ansible repo
 
+The brew secrets need to be removed after migration, since the root ca cert had been installed in the base image.
+
 ---
 ### `build_ansible_config.py`
 The script uses the ansible vault to encode the credentials, so the ansible password file is required in place.
